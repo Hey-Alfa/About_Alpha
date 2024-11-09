@@ -1,0 +1,133 @@
+body {
+  background-color: black;
+}
+.brg {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(166, 77, 121, 0.72) 0%,
+    rgba(114, 28, 90, 0.33) 21%,
+    rgba(255, 255, 255, 0) 67%
+  );
+}
+nav {
+  background-color: #3b1c32;
+  a {
+    color: #fff;
+    font-family: "PlusJakartaSans", sans-serif;
+  }
+}
+
+.greating {
+  position: absolute;
+  left: 40%;
+}
+.mgc {
+  color: #a64d79;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0px;
+}
+.blink {
+  animation: type 4s steps(29) 0.5s forwards, blink 750ms steps(29) infinite;
+}
+
+//
+.card_background-gradient {
+  background-image: linear-gradient(
+    to right top,
+    #6a1e55,
+    #792a5e,
+    #883567,
+    #974170,
+    #a64d79
+  );
+}
+.progress-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(106, 30, 85, 1) 0%,
+    rgba(166, 77, 121, 1) 100%
+  );
+}
+.card {
+  height: inherit;
+  img {
+    height: 29.188rem;
+  }
+}
+.icon_skills {
+  div {
+    div {
+      img {
+        height: 2.188rem;
+        width: 2.188rem;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.line {
+  height: 1.5rem;
+  border: 1px solid #fff;
+}
+
+.icon-contact {
+  img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/* Extra small devices (portrait phones, 320px and up) */
+@media (min-width: 320px) {
+  /* Styles for devices with width 320px and up */
+  .greating {
+    left: 23%;
+    top: 8%;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (min-width: 480px) {
+  .greating {
+    left: 22%;
+    top: 5%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .greating {
+    left: 31%;
+    top: 8%;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .greating {
+    left: 34%;
+    top: 9%;
+  }
+}
+
+/* Extra large devices (large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+  .greating {
+    left: 40%;
+    top: 18%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+  }
+}

@@ -1,0 +1,185 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "bootstrap/scss/bootstrap";
+
+// fonst
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("/assets/font/PlusJakartaSans-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("/assets/font/PlusJakartaSans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Preahvihear";
+  src: url("/assets/font/Preahvihear-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Box-sizing reset: ensures all elements use border-box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default font style */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #1a1a1d;
+  color: #ffffff;
+}
+
+/* Remove default list styling */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit; /* Keeps the text color of the link as the parent */
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default form input padding */
+input,
+button,
+textarea,
+select {
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  outline: none; /* Remove focus outline for inputs (can be replaced with custom styles) */
+}
+
+/* Normalize heading margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Set a baseline font size */
+html {
+  font-size: 100%; /* 1rem = 16px */
+}
+
+/* Handle images and videos */
+img,
+picture,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Prevent browsers from styling fieldsets */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default input and button focus outline */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+.font-Plus-normal {
+  font-family: "PlusJakartaSans", sans-serif !important;
+}
+.font_preah-normal {
+  font-family: "Preahvihear", sans-serif !important;
+}
+
+.font-c-w {
+  color: #ffffff;
+}
+
+.font-bolder {
+  font-weight: bolder;
+}
+
+.font-xs {
+  font-size: clamp(0.563rem, 1vw + 0.5rem, 0.688rem); /* Fluid scaling */
+}
+
+.font-s {
+  font-size: clamp(0.75rem, 1.5vw + 0.75rem, 0.938rem); /* Fluid scaling */
+}
+
+.font-m {
+  font-size: clamp(0.875rem, 2vw + 0.875rem, 1.063rem); /* Fluid scaling */
+}
+
+.font-l {
+  font-size: clamp(1rem, 2.5vw + 1rem, 1.313rem); /* Fluid scaling */
+}
+
+.font-xl {
+  font-size: clamp(1.875rem, 3vw + 1rem, 2.5rem); /* Fluid scaling */
+}
+
+.font-xxl {
+  font-size: clamp(2rem, 4vw + 1rem, 3.125rem); /* Fluid scaling */
+}
+
+/* Extra small devices (portrait phones, 320px and up) */
+@media (min-width: 320px) {
+  /* Styles for devices with width 320px and up */
+}
+
+/* Small devices (phones, 480px and up) */
+@media (min-width: 480px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+}
+
+/* Extra large devices (large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+}
