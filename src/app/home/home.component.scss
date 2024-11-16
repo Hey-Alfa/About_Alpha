@@ -1,16 +1,17 @@
 body {
   background-color: black;
 }
+
 .brg {
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(166, 77, 121, 0.72) 0%,
-    rgba(114, 28, 90, 0.33) 21%,
-    rgba(255, 255, 255, 0) 67%
-  );
+  background: radial-gradient(circle at 50% 50%,
+      rgba(166, 77, 121, 0.72) 0%,
+      rgba(114, 28, 90, 0.33) 21%,
+      rgba(255, 255, 255, 0) 67%);
 }
+
 nav {
   background-color: #3b1c32;
+
   a {
     color: #fff;
     font-family: "PlusJakartaSans", sans-serif;
@@ -21,40 +22,93 @@ nav {
   position: absolute;
   left: 40%;
 }
+
 .mgc {
   color: #a64d79;
   border-radius: 50%;
   border: 1px solid rgb(255, 255, 255);
   padding: 0px;
 }
-.blink {
-  animation: type 4s steps(29) 0.5s forwards, blink 750ms steps(29) infinite;
+
+
+.blink_ {
+  position: relative;
+  width: fit-content;
+}
+
+.blink_::after,
+.blink_::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.blink_::before {
+  background: #1a1a1d;
+  animation:
+    type 4s steps(31) 1s forwards;
+}
+
+.blink_::after {
+  width: 0.120em;
+  background: rgb(255, 255, 255);
+  animation:
+    type 4s steps(31) 1s forwards,
+    blink 750ms steps(31) infinite;
 }
 
 //
 .card_background-gradient {
-  background-image: linear-gradient(
-    to right top,
-    #6a1e55,
-    #792a5e,
-    #883567,
-    #974170,
-    #a64d79
-  );
+  background-image: linear-gradient(to right top,
+      #6a1e55,
+      #792a5e,
+      #883567,
+      #974170,
+      #a64d79);
 }
+
 .progress-bg {
-  background: linear-gradient(
-    90deg,
-    rgba(106, 30, 85, 1) 0%,
-    rgba(166, 77, 121, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(106, 30, 85, 1) 0%,
+      rgba(166, 77, 121, 1) 100%);
 }
+
+.w_25 {
+  width: 25%;
+  animation: progress_25 4s ease;
+}
+
+.w_35 {
+  width: 35%;
+  animation: progress_35 4s ease;
+}
+
+.w_55 {
+  width: 55%;
+  animation: progress_55 5.5s ease;
+}
+
+.w_60 {
+  width: 60%;
+  animation: progress_60 7s ease;
+}
+
+.w_65 {
+  width: 65%;
+  animation: progress_65 7s ease;
+}
+
 .card {
   height: inherit;
+
   img {
     height: 29.188rem;
   }
 }
+
 .icon_skills {
   div {
     div {
@@ -67,6 +121,7 @@ nav {
     }
   }
 }
+
 .line {
   height: 1.5rem;
   border: 1px solid #fff;
@@ -83,6 +138,7 @@ nav {
 
 /* Extra small devices (portrait phones, 320px and up) */
 @media (min-width: 320px) {
+
   /* Styles for devices with width 320px and up */
   .greating {
     left: 23%;
@@ -122,12 +178,67 @@ nav {
   }
 }
 
+
+
 @keyframes blink {
-  0%,
-  100% {
-    opacity: 1; /* Fully visible */
+
+  to {
+    background: transparent;
   }
-  50% {
-    opacity: 0; /* Invisible */
+}
+
+@keyframes type {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes progress_25 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes progress_35 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 35%;
+  }
+}
+
+@keyframes progress_55 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 55%;
+  }
+}
+
+@keyframes progress_60 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes progress_65 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 65%;
   }
 }
